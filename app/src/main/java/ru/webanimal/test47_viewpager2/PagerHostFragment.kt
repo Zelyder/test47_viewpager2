@@ -14,7 +14,7 @@ class PagerHostFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.fragment_viewpager_host_fragment, container, false)
+        return inflater.inflate(R.layout.viewpager_host_fragment, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
