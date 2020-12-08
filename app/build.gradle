@@ -39,5 +39,9 @@ dependencies {
     implementation 'androidx.fragment:fragment-ktx:1.2.5'
     implementation "androidx.viewpager2:viewpager2:1.1.0-alpha01"
     implementation 'com.google.android.material:material:1.2.1'
+
+    // https://github.com/hdodenhof/CircleImageView
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
 }

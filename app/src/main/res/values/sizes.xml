@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Onboarding -->
+    <dimen name="onboarding_page_title_size">20sp</dimen>
+    <dimen name="onboarding_page_subtitle_size">16sp</dimen>
+    <!-- Onboarding -->
+
+</resources>
