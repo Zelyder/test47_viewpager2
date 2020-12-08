@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
+import de.hdodenhof.circleimageview.CircleImageView
 
 class OnboardingPageFragment : Fragment() {
     override fun onCreateView(
@@ -21,6 +22,9 @@ class OnboardingPageFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         arguments?.let {
+            val avatarResId = it.getInt(KEY_ONBOARDING_AVATAR_RES_ID, R.drawable.img_portrait_page_02)
+            view.findViewById<CircleImageView>(R.id.civOnboardingAvatar).setImageResource(avatarResId)
+
             view.findViewById<TextView>(R.id.tvOnboardingPageTitle).text = it.getString(KEY_ONBOARDING_TITLE)
                 ?: getString(R.string.onboarding_page_title_sample)
 
@@ -30,9 +34,15 @@ class OnboardingPageFragment : Fragment() {
     }
 
     companion object {
-        fun create(title: String, subtitle: String): OnboardingPageFragment {
+        fun create(
+            title: String,
+            subtitle: String,
+            avatarResId: Int
+        ): OnboardingPageFragment {
+
             return OnboardingPageFragment().apply {
                 arguments = Bundle().apply {
+                    putInt(KEY_ONBOARDING_AVATAR_RES_ID, avatarResId)
                     putString(KEY_ONBOARDING_TITLE, title)
                     putString(KEY_ONBOARDING_SUBTITLE, subtitle)
                 }
@@ -41,5 +51,6 @@ class OnboardingPageFragment : Fragment() {
     }
 }
 
+private const val KEY_ONBOARDING_AVATAR_RES_ID = "KEY_ONBOARDING_AVATAR_RES_ID"
 private const val KEY_ONBOARDING_TITLE = "KEY_ONBOARDING_TITLE"
 private const val KEY_ONBOARDING_SUBTITLE = "KEY_ONBOARDING_SUBTITLE"

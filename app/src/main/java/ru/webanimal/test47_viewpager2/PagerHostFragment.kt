@@ -20,6 +20,11 @@ class PagerHostFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val avatars = arrayOf(
+            R.drawable.img_portrait_page_01,
+            R.drawable.img_portrait_page_02,
+            R.drawable.img_portrait_page_03,
+        )
         val titles = resources.getStringArray(R.array.onboarding_page_titles)
         val subtitles = resources.getStringArray(R.array.onboarding_page_subtitles)
     }
