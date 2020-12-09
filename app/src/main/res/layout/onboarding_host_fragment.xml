@@ -18,11 +18,23 @@
         app:layout_constraintTop_toTopOf="parent"
         />
 
+    <LinearLayout
+        android:id="@+id/layIndicators"
+        android:layout_width="@dimen/onboarding_indicator_layout_width"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/space_16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/btnOnboardingButton"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/btnOnboardingButton"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/onboarding_button_height"
-        android:layout_margin="@dimen/space_32dp"
+        android:layout_marginBottom="@dimen/space_32dp"
         android:textColor="@color/white"
         android:text="@string/onboarding_page_button_skip"
         android:backgroundTint="@color/colorPink"

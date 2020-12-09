@@ -2,6 +2,7 @@
 <resources>
 
     <dimen name="space_32dp">32dp</dimen>
+    <dimen name="space_24dp">24dp</dimen>
     <dimen name="space_16dp">16dp</dimen>
     <dimen name="space_8dp">8dp</dimen>
     <dimen name="space_4dp">4dp</dimen>
@@ -9,6 +10,9 @@
     <!-- Onboarding -->
     <dimen name="onboarding_avatar_diameter">256dp</dimen>
     <dimen name="onboarding_avatar_stroke_width">2dp</dimen>
+    <dimen name="onboarding_indicator_layout_width">256dp</dimen>
+    <dimen name="onboarding_indicator_item_space">12dp</dimen>
+    <dimen name="onboarding_indicator_item_border_width">1dp</dimen>
     <dimen name="onboarding_button_height">48dp</dimen>
     <dimen name="onboarding_button_radius">24dp</dimen>
     <!-- Onboarding -->
