@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
 
 		if (savedInstanceState == null) {
 			supportFragmentManager.beginTransaction()
-				.replace(R.id.container, PagerHostFragment.create())
+				.replace(R.id.container, OnboardingHostFragment.create())
 				.addToBackStack(null)
 				.commit()
 		}

@@ -35,9 +35,9 @@ class OnboardingPageFragment : Fragment() {
 
     companion object {
         fun create(
+            avatarResId: Int,
             title: String,
-            subtitle: String,
-            avatarResId: Int
+            subtitle: String
         ): OnboardingPageFragment {
 
             return OnboardingPageFragment().apply {

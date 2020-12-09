@@ -6,7 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 
-class PagerHostFragment : Fragment() {
+class OnboardingHostFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -14,7 +14,7 @@ class PagerHostFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        return inflater.inflate(R.layout.viewpager_host_fragment, container, false)
+        return inflater.inflate(R.layout.onboarding_host_fragment, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -30,6 +30,6 @@ class PagerHostFragment : Fragment() {
     }
 
     companion object {
-        fun create(): PagerHostFragment = PagerHostFragment()
+        fun create(): OnboardingHostFragment = OnboardingHostFragment()
     }
 }
